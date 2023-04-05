@@ -38,7 +38,21 @@
   display: flex;
   flex-direction: column;
 }
-
+.faculdade:hover {
+  transform: scale(105%);
+  transition: all ease 0.3s;
+  background-color: white;
+  color: #111;
+  transition: all ease 1s;
+}
+.faculdade:hover .faculdade-tipo {
+  color: red;
+  transition: 1s;
+}
+.faculdade:hover .faculdade-instituicao {
+  color: red;
+  transition: 1s;
+}
 .faculdade-tipo {
   font-size: 0.875rem;
   text-transform: uppercase;

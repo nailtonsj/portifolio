@@ -16,6 +16,9 @@
   line-height: 1.33;
   color: #ccc;
 }
+.footer-texto::selection {
+  background-color: #046262;
+}
 .footer-contato li {
   font-weight: bold;
   font-size: 2.25rem;
@@ -30,6 +33,20 @@
   grid-column: 1/-1;
   font-size: 1.125rem;
   color: #8f8f8f;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-copy a {
+  text-decoration: none;
+  color: #046262;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+.footer-copy a:hover {
+  background-color: #046262;
+  color: #000000;
 }
 
 @media (max-width: 800px) {

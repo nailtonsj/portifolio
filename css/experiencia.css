@@ -38,6 +38,15 @@
   position: absolute;
   z-index: 1;
 }
+.empresa:hover {
+  transform: scale(105%);
+  transition: all ease 1s;
+  background-color: #111111;
+  color: #ffffff;
+}
+.empresa:hover .empresa-habilidades li {
+  color: #111111;
+}
 .empresa-ano {
   position: absolute;
   top: 23px;

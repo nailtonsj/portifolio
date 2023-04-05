@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nailton S Jesus</title>
   <meta name="description" content="Desenvolvedor Front End & Ux/Ui Designer">
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header class="header responsivo">
+  <header class="header responsivo" id="inicio">
     <h1>NailtonSJ</h1>
     <nav>
       <ul class="header-menu">
@@ -23,9 +23,15 @@
   </header>
 
   <main class="introducao responsivo">
-    <img src="./img/eu.jpeg" width="360" height="520" alt="perfil">
+
     <div>
-      <h1>Desenvolvedor <br> Front End & <br> UX/UI Designer</h1>
+      <img src="./img/eu.jpeg" width="360" height="520" alt="perfil">
+      <a href="oi" class="legenda">NailtonGitHub</a>
+    </div>
+    <div>
+      <h1 class="maquina">
+        <Desenvolvedor <br> Front End & <br> UX/UI Designer
+      </h1>
       <p>Localizado em Aracaju-Sergipe 🏖️ </p>
     </div>
   </main>
@@ -137,9 +143,11 @@
         <li><a href="+5579988073675">+55 79 98807-3675</a></li>
         <li><a href="https://www.instagram.com/nailtonpld/" target="_blank">@nailtonsj</a></li>
       </ul>
-      <p class="footer-copy"> Alguns direitos reservados.</p>
+      <p class="footer-copy"> Alguns direitos reservados. <abbr title="Voltar para o começo"><a href="#inicio">↑</a></abbr></p>
+
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

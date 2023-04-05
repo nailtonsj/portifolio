@@ -40,3 +40,9 @@ img {
     max-width: initial;
   }
 }
+* {
+  scroll-behavior: smooth;
+}
+abbr {
+  text-decoration: none;
+}
