@@ -121,6 +121,10 @@
   display: flex;
   justify-content: space-between;
 }
+.idiomas li {
+  display: flex;
+  justify-content: space-between;
+}
 @media (max-width: 800px) {
   .formacao-container {
     grid-template-columns: 1fr;
@@ -138,4 +142,28 @@
     position: initial;
     margin-bottom: 10px;
   }
-} ;
+}
+.formacao-extra h3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.formacao-extra h3::after {
+  content: "↑";
+  display: block;
+  color: green;
+  font-size: 20px;
+}
+.formacao-extra h3.ativo::after {
+  content: " ↓ ";
+  display: block;
+  color: green;
+  font-size: 20px;
+}
+.formacao-extra ul {
+  display: none;
+}
+.formacao-extra ul.ativo {
+  display: block;
+}

@@ -8,6 +8,17 @@ function typeWriter(elemento) {
     }, 100 * i);
   });
 }
-setInterval(typeWriter, 1000);
 const elemento = document.querySelector(".maquina");
-typeWriter(elemento);
+setInterval(() => {
+  typeWriter(elemento);
+}, 10000);
+
+const ativarUl = document.querySelectorAll(".formacao-extra h3");
+if (ativarUl) {
+  ativarUl.forEach((item, index) => {
+    item.addEventListener("click", function (e) {
+      item.classList.toggle("ativo");
+      item.nextElementSibling.classList.toggle("ativo");
+    });
+  });
+}
