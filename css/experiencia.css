@@ -38,15 +38,7 @@
   position: absolute;
   z-index: 1;
 }
-.empresa:hover {
-  transform: scale(105%);
-  transition: all ease 1s;
-  background-color: #111111;
-  color: #ffffff;
-}
-.empresa:hover .empresa-habilidades li {
-  color: #111111;
-}
+
 .empresa-ano {
   position: absolute;
   top: 23px;
@@ -67,6 +59,7 @@
   line-height: 1.4;
   color: #525252;
 }
+
 .empresa-habilidades {
   display: flex;
   flex-wrap: wrap;
@@ -79,6 +72,19 @@
   border-radius: 4px;
   background-color: #ffffff;
   padding: 5px 10px;
+}
+.empresa:hover {
+  transform: scale(105%);
+  transition: all ease 1s;
+  background-color: #111111;
+  color: #ffffff;
+}
+.empresa:hover .empresa-habilidades li {
+  color: #111111;
+}
+.empresa:hover .empresa-texto {
+  color: #e9dfdf;
+  transition: all ease 1s;
 }
 @media (max-width: 800px) {
   .experiencia {

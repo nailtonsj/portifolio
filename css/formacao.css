@@ -46,11 +46,11 @@
   transition: all ease 1s;
 }
 .faculdade:hover .faculdade-tipo {
-  color: red;
+  color: rgb(4, 29, 29);
   transition: 1s;
 }
 .faculdade:hover .faculdade-instituicao {
-  color: red;
+  color: rgb(4, 98, 98);
   transition: 1s;
 }
 .faculdade-tipo {
@@ -150,16 +150,19 @@
   gap: 10px;
 }
 .formacao-extra h3::after {
-  content: "↑";
+  content: " ↴ ";
+  padding: 5px 10px;
+  border-radius: 4px;
   display: block;
-  color: green;
+  color: rgb(4, 98, 98);
   font-size: 20px;
+  transform: rotate(180deg);
 }
 .formacao-extra h3.ativo::after {
-  content: " ↓ ";
   display: block;
-  color: green;
+  color: rgb(4, 98, 98);
   font-size: 20px;
+  transform: rotate(0deg);
 }
 .formacao-extra ul {
   display: none;
