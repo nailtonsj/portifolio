@@ -46,3 +46,38 @@ img {
 abbr {
   text-decoration: none;
 }
+.js [data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+.js [data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+.js [data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+.js [data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+/* @keyframes scrollLeft {
+  0% {
+    transform: translate3d(-150px, 0px, 0);
+    opacity: 0%;
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+    opacity: 100%;
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translate3d(150px, 0, 0);
+    opacity: 0%;
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+    opacity: 100%;
+  }
+} */
